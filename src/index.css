@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
+    --white: white;
+    --blue-grey: #2f303d;
+    --green-grey: #1a331a;
     --light-brown: burlywood;
     --dark-brown: #977b60;
     --forest-green-traditional: #004b23ff;
@@ -11,14 +15,13 @@
     --sheen-green: #70e000ff;
     --green-lizard: #9ef01aff;
     --electric-lime: #ccff33ff;
-    --white: white;
 }
 
 body{
     margin: 0px !important;
     padding: 0px !important;
 
-    background-color: var(--white);
+    background-color: var(--green-grey);
 }
 
 p{ 
@@ -28,29 +31,43 @@ p{
 /*MyIndoorGarden*/
 
 /*Header*/
-.header{
-    color: var(--forest-green-traditional);
+.title{
+    color: var(--white);
 
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 50px;
-    text-align: center;
+
+    text-align: left;
+    margin-left: 5%;
+}
+
+.headingline{
+    background-color: var(--white);
+    color: var(--white);
+
+    font-size: 3px;
+    width: 90%;
+    margin:auto;
+    margin-bottom: 1%;
+
+    border-radius: 8px;
 }
 
 /*Stand*/
 .stand{
     margin: auto;
-    padding: 0.25%;
-
     display: flex;
     flex-direction: row; 
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .shelf{
     background-color: var(--light-brown);
 
-    width: 90%;
+    font-size: 3px;
+    width: 80%;
     margin: auto;
+    margin-bottom: 1.5%;
 
     border-radius: 8px;
 
@@ -59,6 +76,7 @@ p{
 
 /*Plant*/
 .plant{
+    color: var(--white);
     height: 15%;
     width: 15%;
 
@@ -70,6 +88,8 @@ p{
 .plantPic{
     height: auto;
     width: 90%;
+
+    border-radius: 8px;
 }
 
 /*Factfile*/
