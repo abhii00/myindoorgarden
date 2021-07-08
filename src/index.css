@@ -21,7 +21,7 @@ body{
     margin: 0px !important;
     padding: 0px !important;
 
-    background-color: var(--green-grey);
+    background-color: var(--white);
 
     font-family: 'Poppins', sans-serif;
 }
@@ -39,6 +39,12 @@ p{
 }
 
 /*Header*/
+.header{
+    background-color: var(--green-grey);
+
+    padding-bottom: 3%;
+}
+
 .title{
     color: var(--white);
 
@@ -83,7 +89,7 @@ p{
 
 /*Plant*/
 .plant{
-    color: var(--white);
+    color: var(--green-grey);
 
     height: 15%;
     width: 15%;
