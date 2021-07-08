@@ -31,7 +31,7 @@ class MyIndoorGarden extends React.Component{
             Object.keys(garden).forEach(function(key) {
                 var plant_data = garden[key];
                 var plant = <Plant nickname={key} name={plant_data.type} url={plant_data.image_url}/>
-                console.log(plant_data.type)
+                console.log(plant_data)
                 imported_plants.push(plant)
             });
             this.setState({plants: imported_plants});
