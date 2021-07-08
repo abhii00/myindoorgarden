@@ -7,6 +7,7 @@ class MyIndoorGarden extends React.Component{
         
         this.state = {
             factfileshown: false,
+            plants: Array(null)
         }
     }
 
@@ -18,17 +19,31 @@ class MyIndoorGarden extends React.Component{
         this.setState({factfileshown: false})
     }
 
-    render(){
-        var plants = Array(5).fill(
-            <Plant renderFactfile={this.renderFactfile.bind(this)} name="Kentia Palm" pic="https://cdn.shopify.com/s/files/1/1706/1307/products/Howea-forsteriana-Kentia-Palm-Raw-Cody-Tall-Plant-Vase-Running-Rust_61b38fd3-218c-4669-9042-d4c6b040a36b_1600x.jpg?v=1617186033"/>
-        )
+    componentDidMount(){
+        fetch(this.props.garden)
+        .then(r => r.json())
+        .then(json => {
+            var garden = json;
+            console.log("Garden Imported");  
+            
+            var imported_plants = Array(null);
 
+            Object.keys(garden).forEach(function(key) {
+                var plant_data = garden[key];
+                var plant = <Plant nickname={key} name={plant_data.type} url={plant_data.image_url}/>
+                console.log(plant_data.type)
+                imported_plants.push(plant)
+            });
+            this.setState({plants: imported_plants});
+            console.log("Plants Created");    
+        })
+    }
+
+    render(){
         return(
             <div className="myindoorgarden">
                 <Header/>
-                <Stand plants={plants}/>
-                <Stand plants={plants}/>
-                <Stand plants={plants}/>
+                <Stand plants={this.state.plants}/>
                 {(this.state.factfileshown) ? <Factfile unrenderFactfile={this.unrenderFactfile.bind(this)} /> : ''}
             </div>
         )

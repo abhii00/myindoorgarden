@@ -42,7 +42,8 @@ p{
 .header{
     background-color: var(--green-grey);
 
-    padding-bottom: 3%;
+    padding-bottom: 5%;
+    margin-bottom: 0.5%;
 }
 
 .title{
@@ -61,7 +62,6 @@ p{
     font-size: 3px;
     width: 90%;
     margin:auto;
-    margin-bottom: 1%;
 
     border-radius: 8px;
 }
@@ -111,12 +111,12 @@ p{
     color: var(--green-grey);
     background-color: var(--white);
 
-    height: 80%;
+    height: 70%;
     width: 40%;
     text-align: center;
     margin: auto;
     position: absolute;
-    top: 12%;
+    top: 20%;
     left: 30%;
 
     border-radius: 8px;

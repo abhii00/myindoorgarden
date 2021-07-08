@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import { MyIndoorGarden } from './components/components.js'
 
 import './index.css'
+var garden_url = "./gardens/test_garden.js"
 
 ReactDOM.render(
-    <MyIndoorGarden />,
+    <MyIndoorGarden garden={garden_url}/>,
     document.getElementById('root')
 );
