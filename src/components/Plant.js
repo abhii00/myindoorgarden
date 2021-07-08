@@ -3,12 +3,12 @@ import React from 'react';
 class Plant extends React.Component{
     render(){
         return(
-            <div className="plant">
+            <a className="plant" onClick={this.props.renderFactfile} href="/#">
+                <p>{this.props.name}</p>
                 <picture>
                     <img className="plantPic" src={this.props.pic} alt=""></img>
                 </picture>
-                <p>{this.props.name}</p>
-            </div>
+            </a>
         )
     }
 }

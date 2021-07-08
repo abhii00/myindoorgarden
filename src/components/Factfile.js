@@ -5,6 +5,7 @@ class Factfile extends React.Component{
         return(
             <div className="factfile">
                 &nbsp;
+                <a className="cross" onClick={this.props.unrenderFactfile} href="/#"> X </a>
             </div>
         )
     }

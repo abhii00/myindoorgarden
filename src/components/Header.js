@@ -10,7 +10,7 @@ class Header extends React.Component{
                     </p>
                 </div>
                 <div className="headingline">
-                    &nbsp
+                    &nbsp;
                 </div>   
             </React.Fragment>
         )

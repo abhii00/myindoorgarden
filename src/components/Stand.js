@@ -9,7 +9,6 @@ class Stand extends React.Component{
                 </div>
                 <div className="shelf">&nbsp;</div>
             </React.Fragment>
-            
         )
     }
 }

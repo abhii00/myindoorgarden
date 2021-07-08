@@ -4,7 +4,7 @@
 :root{
     --white: white;
     --blue-grey: #2f303d;
-    --green-grey: #1a331a;
+    --green-grey: #0f1d0f;
     --light-brown: burlywood;
     --dark-brown: #977b60;
     --forest-green-traditional: #004b23ff;
@@ -22,6 +22,8 @@ body{
     padding: 0px !important;
 
     background-color: var(--green-grey);
+
+    font-family: 'Poppins', sans-serif;
 }
 
 p{ 
@@ -29,12 +31,17 @@ p{
 }
 
 /*MyIndoorGarden*/
+.myindoorgarden{
+    height: 100%;
+    min-height: 100%;
+
+    position:relative;
+}
 
 /*Header*/
 .title{
     color: var(--white);
 
-    font-family: 'Poppins', sans-serif;
     font-size: 50px;
 
     text-align: left;
@@ -67,7 +74,7 @@ p{
     font-size: 3px;
     width: 80%;
     margin: auto;
-    margin-bottom: 1.5%;
+    margin-bottom: 0.5%;
 
     border-radius: 8px;
 
@@ -77,12 +84,13 @@ p{
 /*Plant*/
 .plant{
     color: var(--white);
+
     height: 15%;
     width: 15%;
-
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 20px;
     text-align: center;
+
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .plantPic{
@@ -93,3 +101,30 @@ p{
 }
 
 /*Factfile*/
+.factfile{
+    color: var(--green-grey);
+    background-color: var(--white);
+
+    height: 80%;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 12%;
+    left: 30%;
+
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--light-brown);
+
+    box-shadow: 4px 4px;
+}
+
+.cross{
+    color: (--green-grey);
+
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+}
