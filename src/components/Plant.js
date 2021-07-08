@@ -1,7 +1,9 @@
 import React from 'react';
 
 class Plant extends React.Component{
-    render(){}
+    render(){
+        return(null)
+    }
 }
 
 export default Plant

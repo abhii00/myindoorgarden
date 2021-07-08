@@ -1,7 +1,9 @@
 import React from 'react';
 
 class Stand extends React.Component{
-    render(){}
+    render(){
+        return(null)
+    }
 }
 
 export default Stand

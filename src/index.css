@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+:root{
+    --forest-green-traditional: #004b23ff;
+    --dark-green-x-11: #006400ff;
+    --pakistan-green: #007200ff;
+    --ao-english: #008000ff;
+    --yellow-green-color-wheel: #38b000ff;
+    --sheen-green: #70e000ff;
+    --green-lizard: #9ef01aff;
+    --electric-lime: #ccff33ff;
+    --white-smoke: white-smoke;
+}
+body{
+    margin: 0px !important;
+    padding: 0px !important;
+
+    background-color: var(--white-smoke);
+}
+p { margin: 0; }
+
+/*MyIndoorGarden*/
+
+
+/*Header*/
+.header{
+    color: var(--dark-green-x-11);
+
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*Stand*/
+
+
+/*Plant*/
+
+
+/*Factfile*/

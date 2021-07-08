@@ -1,7 +1,9 @@
 import React from 'react';
 
 class Factfile extends React.Component{
-    render(){}
+    render(){
+        return(null)
+    }
 }
 
 export default Factfile
