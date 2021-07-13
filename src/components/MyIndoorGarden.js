@@ -7,7 +7,12 @@ class MyIndoorGarden extends React.Component{
         
         this.state = {
             factfileshown: false,
-            plants: Array(null)
+            plants: [],
+            stands: []
+        }
+
+        this.consts ={
+            standsize: 5
         }
     }
 
@@ -25,10 +30,19 @@ class MyIndoorGarden extends React.Component{
         .then(json => {
             console.log("Garden Imported");  
             
-            var imported_plants = Array(null);
+            var imported_plants = [];
             Object.keys(json).forEach((key) => imported_plants.push(<Plant type={json[key].type} url={json[key].url}/>));
             this.setState({plants: imported_plants});
-            console.log("Plants Created");    
+            console.log("Plants Created");
+            
+            var imported_stands = [];
+            var stand_plants = [];
+            while (imported_plants.length > 0){
+                stand_plants = imported_plants.splice(0,this.consts.standsize);
+                imported_stands.push(<Stand plants={stand_plants}/>)
+            }
+            this.setState({stands: imported_stands})
+            console.log("Stands Created");
         })
     }
 
@@ -36,7 +50,7 @@ class MyIndoorGarden extends React.Component{
         return(
             <div className="myindoorgarden">
                 <Header/>
-                <Stand plants={this.state.plants}/>
+                {this.state.stands}
                 {(this.state.factfileshown) ? <Factfile unrenderFactfile={this.unrenderFactfile.bind(this)} /> : ''}
             </div>
         )
