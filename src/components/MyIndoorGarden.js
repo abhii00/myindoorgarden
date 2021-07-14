@@ -16,11 +16,14 @@ class MyIndoorGarden extends React.Component{
         }
     }
 
-    renderFactfile(){
-        this.setState({factfileshown: true})
+    renderFactfile(e){
+        this.setState({
+            factfileshown: true,
+            factfileplant: e.currentTarget.getAttribute("plant")
+        })
     }
 
-    unrenderFactfile(){
+    unrenderFactfile = () => {
         this.setState({factfileshown: false})
     }
 
@@ -31,7 +34,7 @@ class MyIndoorGarden extends React.Component{
             console.log("Garden Imported");  
             
             var imported_plants = [];
-            Object.keys(json).forEach((key) => imported_plants.push(<Plant plant={json[key]} renderFactfile={this.renderFactfile.bind(this)}/>));
+            Object.keys(json).forEach((key) => imported_plants.push(<Plant plant={JSON.stringify(json[key])} renderFactfile={this.renderFactfile.bind(this)}/>));
             this.setState({plants: imported_plants});
             console.log("Plants Created");
             
@@ -51,7 +54,7 @@ class MyIndoorGarden extends React.Component{
             <div className="myindoorgarden">
                 <Header/>
                 {this.state.stands}
-                {(this.state.factfileshown) ? <Factfile unrenderFactfile={this.unrenderFactfile.bind(this)} /> : ''}
+                {(this.state.factfileshown) ? <Factfile plant={this.state.factfileplant} unrenderFactfile={this.unrenderFactfile.bind(this)} /> : ''}
             </div>
         )
     }

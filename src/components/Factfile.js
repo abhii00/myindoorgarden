@@ -1,10 +1,22 @@
 import React from 'react';
 
 class Factfile extends React.Component{
+    constructor(props){
+        super(props);
+
+        this.state = {
+            plant: 0
+        }
+    }
+
+    componentDidMount(){
+        this.setState({plant: JSON.parse(this.props.plant)})
+    }
+
     render(){
         return(
             <div className="factfile">
-                <p>Nickname: {}</p>
+                <p>Nickname: {this.state.plant.type}</p>
                 <p>Species: {}</p>
 
                 <p>When I was Last...</p>

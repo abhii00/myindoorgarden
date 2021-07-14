@@ -10,12 +10,12 @@ class Plant extends React.Component{
     }
 
     componentDidMount(){
-        this.setState({plant: this.props.plant})
+        this.setState({plant: JSON.parse(this.props.plant)})
     }
 
     render(){
         return(
-            <a className="plant" onClick={this.props.renderFactfile} href="/#">
+            <a className="plant" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)}>
                 <p>{this.state.plant.type}</p>
                 <picture>
                     <img className="plantPic" src={this.state.plant.url} alt=""></img>
