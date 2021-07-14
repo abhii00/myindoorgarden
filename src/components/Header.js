@@ -5,9 +5,9 @@ class Header extends React.Component{
         return(
             <div className="header-main">
                 <div className="header-title">
-                    <span className="header-title-firstletter">M</span>Y&nbsp;  
-                    <span className="header-title-firstletter">I</span>NDOOR&nbsp; 
-                    <span className="header-title-firstletter">G</span>ARDEN&nbsp;
+                    <span className="header-title-firstletter">M</span>y&nbsp;  
+                    <span className="header-title-firstletter">I</span>ndoor&nbsp; 
+                    <span className="header-title-firstletter">G</span>arden&nbsp;
                 </div>
                 <div className="header-headingline">
                     &nbsp;
