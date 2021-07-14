@@ -6,7 +6,6 @@ class Factfile extends React.Component{
             <div className="factfile">
                 <p>Nickname: {}</p>
                 <p>Species: {}</p>
-                <p>Date of Birth: {}</p>
 
                 <p>When I was Last...</p>
 

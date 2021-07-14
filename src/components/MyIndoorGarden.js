@@ -31,7 +31,7 @@ class MyIndoorGarden extends React.Component{
             console.log("Garden Imported");  
             
             var imported_plants = [];
-            Object.keys(json).forEach((key) => imported_plants.push(<Plant type={json[key].type} url={json[key].url} renderFactfile={this.renderFactfile.bind(this)}/>));
+            Object.keys(json).forEach((key) => imported_plants.push(<Plant plant={json[key]} renderFactfile={this.renderFactfile.bind(this)}/>));
             this.setState({plants: imported_plants});
             console.log("Plants Created");
             
