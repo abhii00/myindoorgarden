@@ -31,7 +31,7 @@ p{
 }
 
 /*MyIndoorGarden*/
-.myindoorgarden{
+.myindoorgarden-main{
     height: 100%;
     min-height: 100%;
 
@@ -39,56 +39,56 @@ p{
 }
 
 /*Header*/
-.header{
+.header-main{
     background-color: var(--green-grey);
 
     padding-bottom: 5%;
     margin-bottom: 0.5%;
 }
 
-.title{
-    color: var(--white);
+    .header-title{
+        color: var(--white);
 
-    font-size: 50px;
+        font-size: 50px;
 
-    text-align: left;
-    margin-left: 5%;
-}
+        text-align: left;
+        margin-left: 5%;
+    }
 
-.headingline{
-    background-color: var(--white);
-    color: var(--white);
+    .header-headingline{
+        background-color: var(--white);
+        color: var(--white);
 
-    font-size: 3px;
-    width: 90%;
-    margin:auto;
+        font-size: 3px;
+        width: 90%;
+        margin:auto;
 
-    border-radius: 8px;
-}
+        border-radius: 8px;
+    }
 
 /*Stand*/
-.stand{
+.stand-main{
     margin: auto;
     display: flex;
     flex-direction: row; 
     justify-content: center;
 }
 
-.shelf{
-    background-color: var(--light-brown);
+    .stand-shelf{
+        background-color: var(--light-brown);
 
-    font-size: 3px;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 0.5%;
+        font-size: 3px;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 0.5%;
 
-    border-radius: 8px;
+        border-radius: 8px;
 
-    box-shadow: 4px 4px;
-}
+        box-shadow: 4px 4px;
+    }
 
 /*Plant*/
-.plant{
+.plant-main{
     color: var(--green-grey);
 
     height: 15%;
@@ -99,15 +99,15 @@ p{
     text-decoration: none;
 }
 
-.plantPic{
-    height: auto;
-    width: 90%;
+    .plant-plantPic{
+        height: auto;
+        width: 90%;
 
-    border-radius: 8px;
-}
+        border-radius: 8px;
+    }
 
 /*Factfile*/
-.factfile{
+.factfile-main{
     color: var(--green-grey);
     background-color: var(--white);
 
@@ -128,15 +128,15 @@ p{
     box-shadow: 4px 4px;
 }
 
-.cross{
-    color: var(--green-grey);
+    .factfile-cross{
+        color: var(--green-grey);
 
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 900;
-}
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: 900;
+    }
 
-.pic{
-    height: 70%;
-    width: auto;
-}
+    .factfile-pic{
+        height: 70%;
+        width: auto;
+    }

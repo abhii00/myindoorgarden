@@ -3,13 +3,13 @@ import React from 'react';
 class Header extends React.Component{
     render(){
         return(
-            <div className="header">
-                <div className="title">
+            <div className="header-main">
+                <div className="header-title">
                     <p>
                         My Indoor Garden
                     </p>
                 </div>
-                <div className="headingline">
+                <div className="header-headingline">
                     &nbsp;
                 </div>   
             </div>

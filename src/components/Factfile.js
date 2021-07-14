@@ -15,12 +15,12 @@ class Factfile extends React.Component{
 
     render(){
         return(
-            <div className="factfile">
+            <div className="factfile-main">
                 <p>Nickname: {this.state.plant.nickname}</p>
                 <p>Species: {this.state.plant.species}</p>
 
                 <picture>
-                    <img className="pic" src={this.state.plant.url} alt=""></img>
+                    <img className="factfile-pic" src={this.state.plant.url} alt=""></img>
                 </picture>
 
                 <p>When I was Last...</p>
@@ -28,7 +28,7 @@ class Factfile extends React.Component{
                 <p>Watered: {}</p>
                 <p>Fed: {}</p>
                 &nbsp;
-                <a className="cross" onClick={this.props.unrenderFactfile} href="/#">X</a>
+                <a className="factfile-cross" onClick={this.props.unrenderFactfile} href="/#">X</a>
             </div>
         )
     }

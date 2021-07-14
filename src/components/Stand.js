@@ -4,10 +4,10 @@ class Stand extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <div className="stand">
+                <div className="stand-main">
                     {this.props.plants}  
                 </div>
-                <div className="shelf">&nbsp;</div>
+                <div className="stand-shelf">&nbsp;</div>
             </React.Fragment>
         )
     }

@@ -51,7 +51,7 @@ class MyIndoorGarden extends React.Component{
 
     render(){
         return(
-            <div className="myindoorgarden">
+            <div className="myindoorgarden-main">
                 <Header/>
                 {this.state.stands}
                 {(this.state.factfileshown) ? <Factfile plant={this.state.factfileplant} unrenderFactfile={this.unrenderFactfile.bind(this)} /> : ''}
