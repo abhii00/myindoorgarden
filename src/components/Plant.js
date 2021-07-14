@@ -16,7 +16,7 @@ class Plant extends React.Component{
     render(){
         return(
             <a className="plant" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)}>
-                <p>{this.state.plant.type}</p>
+                <p>{this.state.plant.nickname}</p>
                 <picture>
                     <img className="plantPic" src={this.state.plant.url} alt=""></img>
                 </picture>

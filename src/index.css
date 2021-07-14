@@ -111,7 +111,7 @@ p{
     color: var(--green-grey);
     background-color: var(--white);
 
-    height: 70%;
+    height: 80%;
     width: 40%;
     text-align: center;
     margin: auto;
@@ -133,4 +133,9 @@ p{
     text-decoration: none;
     font-size: 30px;
     font-weight: 900;
+}
+
+.pic{
+    height: 70%;
+    width: auto;
 }

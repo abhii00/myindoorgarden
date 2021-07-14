@@ -19,6 +19,10 @@ class Factfile extends React.Component{
                 <p>Nickname: {this.state.plant.nickname}</p>
                 <p>Species: {this.state.plant.species}</p>
 
+                <picture>
+                    <img className="pic" src={this.state.plant.url} alt=""></img>
+                </picture>
+
                 <p>When I was Last...</p>
 
                 <p>Watered: {}</p>
