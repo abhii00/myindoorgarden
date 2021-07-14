@@ -23,11 +23,11 @@ class Factfile extends React.Component{
                     <img className="factfile-pic-image" src={this.state.plant.url} alt=""></img>
                 </picture>
 
-                <p>When I was Last...</p>
-
-                <p>Watered: {}</p>
-                <p>Fed: {}</p>
-                &nbsp;
+                <div className="factfile-icons"> 
+                    <div className="factfile-icons-watering">{1}</div>
+                    <div className="factfile-icons-feeding">{1}</div>
+                </div>
+                
                 <a className="factfile-cross" onClick={this.props.unrenderFactfile} href="/#">X</a>
             </div>
         )
