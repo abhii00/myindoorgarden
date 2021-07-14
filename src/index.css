@@ -116,6 +116,7 @@ p{
     text-align: center;
     margin: auto;
     position: absolute;
+    display: inline-block;
     top: 20%;
     left: 30%;
 
@@ -128,10 +129,10 @@ p{
 }
 
 .cross{
-    color: (--green-grey);
+    color: var(--green-grey);
 
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
 }
 

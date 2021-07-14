@@ -28,7 +28,7 @@ class Factfile extends React.Component{
                 <p>Watered: {}</p>
                 <p>Fed: {}</p>
                 &nbsp;
-                <a className="cross" onClick={this.props.unrenderFactfile} href="/#"> X </a>
+                <a className="cross" onClick={this.props.unrenderFactfile} href="/#">X</a>
             </div>
         )
     }
