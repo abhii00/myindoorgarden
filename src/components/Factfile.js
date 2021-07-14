@@ -16,11 +16,11 @@ class Factfile extends React.Component{
     render(){
         return(
             <div className="factfile-main">
-                <p>Nickname: {this.state.plant.nickname}</p>
-                <p>Species: {this.state.plant.species}</p>
+                <p className="factfile-nickname">{this.state.plant.nickname}</p>
+                <p className="factfile-species">{this.state.plant.species}</p>
 
-                <picture>
-                    <img className="factfile-pic" src={this.state.plant.url} alt=""></img>
+                <picture className="factfile-pic">
+                    <img className="factfile-pic-image" src={this.state.plant.url} alt=""></img>
                 </picture>
 
                 <p>When I was Last...</p>

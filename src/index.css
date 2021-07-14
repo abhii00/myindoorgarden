@@ -158,15 +158,44 @@ p{
     box-shadow: 4px 4px;
 }
 
+    .factfile-nickname{
+        padding-right: 5%;
+
+        text-align: right;
+        font-size: 45px;
+    }
+
+        .factfile-nickname::first-letter{
+            font-size: 50px;
+        }
+
+    .factfile-species{
+        padding-right: 5%;
+
+        text-align: right;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+        .factfile-species::first-letter{
+            font-size: 30px;
+        }
+
+    .factfile-pic{
+        
+    }
+
+        .factfile-pic-image{
+            height: 60%;
+            width: auto;
+
+            border-radius: 8px;
+        }
+
     .factfile-cross{
         color: var(--green-grey);
 
         text-decoration: none;
         font-size: 25px;
         font-weight: 900;
-    }
-
-    .factfile-pic{
-        height: 70%;
-        width: auto;
     }
