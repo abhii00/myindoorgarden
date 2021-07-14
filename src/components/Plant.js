@@ -10,7 +10,7 @@ class Plant extends React.Component{
     }
 
     componentDidMount(){
-        this.setState({plant: JSON.parse(this.props.plant)})
+        this.setState({plant: this.props.plant})
     }
 
     render(){

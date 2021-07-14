@@ -16,8 +16,8 @@ class Factfile extends React.Component{
     render(){
         return(
             <div className="factfile">
-                <p>Nickname: {this.state.plant.type}</p>
-                <p>Species: {}</p>
+                <p>Nickname: {this.state.plant.nickname}</p>
+                <p>Species: {this.state.plant.species}</p>
 
                 <p>When I was Last...</p>
 
