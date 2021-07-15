@@ -141,13 +141,12 @@ p{
     color: var(--green-grey);
     background-color: var(--white);
 
-    height: 80%;
+    height: 75%;
     width: 40%;
-    text-align: center;
     margin: auto;
     position: absolute;
     display: inline-block;
-    top: 20%;
+    top: 30%;
     left: 30%;
 
     border-radius: 8px;
@@ -159,65 +158,76 @@ p{
 }
 
     .factfile-nickname{
-        padding-right: 5%;
+        padding-left: 5%;
 
-        text-align: right;
-        font-size: 3.5vw;
+        text-align: left;
+        font-size: 3vw;
     }
 
         .factfile-nickname::first-letter{
-            font-size: 4vw;
+            font-size: 3.5vw;
         }
 
     .factfile-species{
-        padding-right: 5%;
+        padding-left: 5%;
 
-        text-align: right;
-        font-size: 2vw;
+        text-align: left;
+        font-size: 1.5vw;
         text-transform: uppercase;
     }
 
         .factfile-species::first-letter{
-            font-size: 2.4vw;
+            font-size: 2vw;
         }
 
     .factfile-pic{
-        text-align: center;
+        display:flex;
+        justify-content: center;
+
+        height: 65%;
+        width: auto;
     }
 
         .factfile-pic-image{
-            height: 55%;
-            width: auto;
-
             border-radius: 8px;
         }
 
     .factfile-icons{
         text-align: center;
+        display: flex;
+        justify-content: center;
+
     }
 
         .factfile-icons-watering{
-            width: 3%;
+            width: 2.75vw;
+            padding: 0.25vw;
+            margin: 0.25vw;
 
             font-size: 2vw;
 
-            border: solid 2px;
+            border: solid 1px;
             border-radius: 100%;
         }
 
         .factfile-icons-feeding{
-            width: 3%;
+            width: 2.75vw;
+            padding: 0.25vw;
+            margin: 0.25vw;
 
             font-size: 2vw;
 
-            border: solid 2px;
+            border: solid 1px;
             border-radius: 100%;
         }
 
     .factfile-cross{
         color: var(--green-grey);
 
+        display:flex;
+        justify-content: center;
+
         text-decoration: none;
-        font-size: 2vw;
+        font-size: 1.75vw;
         font-weight: 900;
     }
