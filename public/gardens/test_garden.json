@@ -1,32 +1,32 @@
 {
     "Plant1": {
-        "nickname": "Kentia 1",
+        "nickname": "Roksolana",
         "species": "Kentia Palm",
         "url": "https://cdn.shopify.com/s/files/1/1706/1307/products/Howea-forsteriana-Kentia-Palm-Raw-Cody-Tall-Plant-Vase-Running-Rust_61b38fd3-218c-4669-9042-d4c6b040a36b_1600x.jpg?v=1617186033"
     },
     "Plant2": {
-        "nickname": "Monstera 1",
-        "species": "Monstera",
+        "nickname": "Panther",
+        "species": "Monstera Deliciosa",
         "url": "https://lookagain.scene7.com/is/image/OttoUK/553w/monstera-deliciosa-%E2%80%99swiss-cheese-plant%E2%80%99-80cm~93E085FRSP.jpg"
     },
     "Plant3": {
-        "nickname": "Kentia 2",
-        "species": "Kentia Palm",
-        "url": "https://cdn.shopify.com/s/files/1/1706/1307/products/Howea-forsteriana-Kentia-Palm-Raw-Cody-Tall-Plant-Vase-Running-Rust_61b38fd3-218c-4669-9042-d4c6b040a36b_1600x.jpg?v=1617186033"
+        "nickname": "Aurora",
+        "species": "Dieffenbachia",
+        "url": "https://thelittlebotanical.com/wp-content/uploads/2020/09/21_JT_025_1000x1000.jpg"
     },
     "Plant4": {
-        "nickname": "Monstera 1",
-        "species": "Monstera",
-        "url": "https://lookagain.scene7.com/is/image/OttoUK/553w/monstera-deliciosa-%E2%80%99swiss-cheese-plant%E2%80%99-80cm~93E085FRSP.jpg"
+        "nickname": "Øystein",
+        "species": "Aglaonema",
+        "url": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1603654887-1427228256-chinese-evergreen-plants-little-water.jpg"
     },
     "Plant5": {
-        "nickname": "Kentia 3",
-        "species": "Kentia Palm",
-        "url": "https://cdn.shopify.com/s/files/1/1706/1307/products/Howea-forsteriana-Kentia-Palm-Raw-Cody-Tall-Plant-Vase-Running-Rust_61b38fd3-218c-4669-9042-d4c6b040a36b_1600x.jpg?v=1617186033"
+        "nickname": "Lyuba",
+        "species": "Golden Pothos",
+        "url": "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1564152607/products/devils-ivy-131ead.jpg"
     },
     "Plant6": {
-        "nickname": "Monstera 3",
-        "species": "Monstera",
-        "url": "https://lookagain.scene7.com/is/image/OttoUK/553w/monstera-deliciosa-%E2%80%99swiss-cheese-plant%E2%80%99-80cm~93E085FRSP.jpg"
+        "nickname": "Shōhei",
+        "species": "Dracaena Trifasciata",
+        "url": "https://cdn.shopify.com/s/files/1/1706/1307/files/Sansevieria-trifasciata-Golden-Flame-Snake-Plant-Dian-Plant-Pot-Camel_1600x.jpg?v=1624547641"
     }
 }
