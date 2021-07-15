@@ -174,7 +174,7 @@ p{
     color: var(--green-grey);
     background-color: var(--white);
 
-    height: 40%;
+    height: 35%;
     width: 40%;
     margin: auto;
     position: absolute;
@@ -230,7 +230,7 @@ p{
         display: flex;
         justify-content: left;
 
-        padding-top: 1%;
+        padding-top: 3%;
         padding-left: 5%;
     }
 
