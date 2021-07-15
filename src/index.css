@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+
 :root{
     --white: white;
     --blue-grey: #2f303d;
@@ -23,7 +25,7 @@ body{
 
     background-color: var(--white);
 
-    font-family: 'Noto Serif JP', serif;
+    font-family: 'Mali', cursive;
 }
 
 p{ 
@@ -42,14 +44,15 @@ p{
 .header-main{
     background-color: var(--green-grey);
 
-    padding-bottom: 5%;
+    height: 10%;
+    padding-bottom: 1%;
     margin-bottom: 0.5%;
 }
 
     .header-title{
         color: var(--white);
 
-        font-size: 4vw;
+        font-size: 3vw;
 
         text-align: left;
         margin-left: 5%;
@@ -58,16 +61,16 @@ p{
     }
 
         .header-title-firstletter{
-            font-size: 6vw;
+            font-size: 4vw;
         }
 
     .header-headingline{
         background-color: var(--white);
         color: var(--white);
 
-        font-size: 0.25vw;
+        font-size: 0.15vw;
         width: 90%;
-        margin:auto;
+        margin: auto;
 
         border-radius: 8px;
     }
@@ -84,23 +87,46 @@ p{
         background-color: var(--light-brown);
 
         font-size: 0.25vw;
-        width: 80%;
+        width: 90%;
         margin: auto;
-        margin-bottom: 0.5%;
 
         border-radius: 8px;
 
         box-shadow: 0.2vw 0.2vw;
     }
 
+    .stand-brackets{
+        display: flex;
+        justify-content: center;
+        flex-direction: row; 
+        margin-bottom: 0.5%;
+    }
+
+        .stand-brackets-end{
+            background-color: var(--light-brown);
+            width: 0.5%;
+            margin-right: 20%;
+            margin-left: 20%;
+            
+            box-shadow: 0.2vw 0.2vw;
+        }
+
+        .stand-brackets-middle{
+            background-color: var(--light-brown);
+            width: 0.5%;
+            margin-right: 11%;
+            margin-left: 11%;
+
+            box-shadow: 0.2vw 0.2vw;
+        }   
 /*Plant*/
 
 
 .plant-main{
     color: var(--green-grey);
 
-    height: 15%;
-    width: 15%;
+    height: 20%;
+    width: 20%;
     
     text-decoration: none;
 }
@@ -111,24 +137,25 @@ p{
 
     .plant-nickname{
         padding-right: 10%;
-        text-align: right;
-        font-size: 2vw;
+        text-align: center;
+        font-size: 1.5vw;
     }
 
         .plant-nickname::first-letter{
-            font-size: 2.5vw;
+            font-size: 2vw;
         }
 
     .plant-species{
         padding-right: 10%;
 
-        text-align: right;
-        font-size: 1vw;
+        text-align: center;
+        font-size: 0.75vw;
         text-transform: uppercase;
+        font-style: italic;
     }
 
         .plant-species::first-letter{
-            font-size: 1.5vw;
+            font-size: 1vw;
         }
 
     .plant-pic{

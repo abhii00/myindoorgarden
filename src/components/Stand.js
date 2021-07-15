@@ -26,6 +26,12 @@ class Stand extends React.Component{
                     {this.state.plants}  
                 </div>
                 <div className="stand-shelf">&nbsp;</div>
+                <div className="stand-brackets">
+                    <div className="stand-brackets-end">&nbsp;</div>
+                    <div className="stand-brackets-middle">&nbsp;</div>
+                    <div className="stand-brackets-middle">&nbsp;</div>
+                    <div className="stand-brackets-end">&nbsp;</div>
+                </div>
             </React.Fragment>
         )
     }
