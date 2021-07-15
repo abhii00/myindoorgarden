@@ -49,7 +49,7 @@ p{
     .header-title{
         color: var(--white);
 
-        font-size: 50px;
+        font-size: 4vw;
 
         text-align: left;
         margin-left: 5%;
@@ -58,14 +58,14 @@ p{
     }
 
         .header-title-firstletter{
-            font-size: 75px;
+            font-size: 6vw;
         }
 
     .header-headingline{
         background-color: var(--white);
         color: var(--white);
 
-        font-size: 3px;
+        font-size: 0.25vw;
         width: 90%;
         margin:auto;
 
@@ -83,14 +83,14 @@ p{
     .stand-shelf{
         background-color: var(--light-brown);
 
-        font-size: 3px;
+        font-size: 0.25vw;
         width: 80%;
         margin: auto;
         margin-bottom: 0.5%;
 
         border-radius: 8px;
 
-        box-shadow: 4px 4px;
+        box-shadow: 0.2vw 0.2vw;
     }
 
 /*Plant*/
@@ -106,23 +106,23 @@ p{
     .plant-nickname{
         padding-right: 10%;
         text-align: right;
-        font-size: 20px;
+        font-size: 2vw;
     }
 
         .plant-nickname::first-letter{
-            font-size: 22px;
+            font-size: 2.5vw;
         }
 
     .plant-species{
         padding-right: 10%;
 
         text-align: right;
-        font-size: 12px;
+        font-size: 1vw;
         text-transform: uppercase;
     }
 
         .plant-species::first-letter{
-            font-size: 15px;
+            font-size: 1.5vw;
         }
 
     .plant-pic{
@@ -162,31 +162,31 @@ p{
         padding-right: 5%;
 
         text-align: right;
-        font-size: 45px;
+        font-size: 3.5vw;
     }
 
         .factfile-nickname::first-letter{
-            font-size: 50px;
+            font-size: 4vw;
         }
 
     .factfile-species{
         padding-right: 5%;
 
         text-align: right;
-        font-size: 24px;
+        font-size: 2vw;
         text-transform: uppercase;
     }
 
         .factfile-species::first-letter{
-            font-size: 30px;
+            font-size: 2.4vw;
         }
 
     .factfile-pic{
-        
+        text-align: center;
     }
 
         .factfile-pic-image{
-            height: 65%;
+            height: 55%;
             width: auto;
 
             border-radius: 8px;
@@ -199,12 +199,16 @@ p{
         .factfile-icons-watering{
             width: 3%;
 
+            font-size: 2vw;
+
             border: solid 2px;
             border-radius: 100%;
         }
 
         .factfile-icons-feeding{
             width: 3%;
+
+            font-size: 2vw;
 
             border: solid 2px;
             border-radius: 100%;
@@ -214,6 +218,6 @@ p{
         color: var(--green-grey);
 
         text-decoration: none;
-        font-size: 25px;
+        font-size: 2vw;
         font-weight: 900;
     }
