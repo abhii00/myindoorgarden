@@ -44,7 +44,7 @@ class MyIndoorGarden extends React.Component{
                 stand_plants = imported_plants.splice(0,this.consts.standsize);
                 imported_stands.push(<Stand plants={stand_plants}/>)
             }
-            while(imported_stands.length < 6){
+            while(imported_stands.length < 5){
                 imported_stands.push(<Stand/>)
             }
             this.setState({stands: imported_stands})
