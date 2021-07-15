@@ -20,7 +20,7 @@ class Factfile extends React.Component{
 
     render(){
         return(
-            <div className="factfile-main">
+            <div className="factfile">
                 <div className="factfile-nickname">{this.state.plant.nickname}</div>
                 <div className="factfile-species">{this.state.plant.species}</div>
 

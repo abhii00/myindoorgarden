@@ -22,7 +22,7 @@ class Plant extends React.Component{
     render(){
         if (!this.state.blank){
             return(
-                <a className="plant-main" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)}>
+                <a className="plant" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)}>
                     <div className="plant-nickname">{this.state.plant.nickname}</div>
                     <div className="plant-species">{this.state.plant.species}</div>
                     
@@ -34,7 +34,7 @@ class Plant extends React.Component{
         }
         else{
             return(
-                <div className="plant-main">
+                <div className="plant">
                      <div className="plant-blank">&nbsp;</div>
                 </div>
             )

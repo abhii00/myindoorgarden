@@ -22,7 +22,7 @@ class Stand extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <div className="stand-main">
+                <div className="stand">
                     {this.state.plants}  
                 </div>
                 <div className="stand-shelf">&nbsp;</div>
