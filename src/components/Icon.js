@@ -3,9 +3,10 @@ import React from 'react'
 class Icon extends React.Component{
     render(){
         return(
-            <picture>
-                <img style={{backgroundColor: this.props.color}} className="icon" src={this.props.image} alt=""></img>
-            </picture>
+            <div className="icon">
+                <img style={{backgroundColor: this.props.color}} className="icon-image" src={this.props.image} alt=""/>
+                <div className="icon-data">1</div>
+            </div>
         )
     }
 }

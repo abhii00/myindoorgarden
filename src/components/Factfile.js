@@ -32,7 +32,7 @@ class Factfile extends React.Component{
                 </div>
 
                 <picture className="factfile-pic">
-                    <img className="factfile-pic-image" src={this.state.plant.url} alt=""></img>
+                    <img className="factfile-pic-image" src={this.state.plant.url} alt=""/>
                 </picture>
                 
                 <a className="factfile-cross" onClick={this.props.unrenderFactfile} href="/#">X</a>

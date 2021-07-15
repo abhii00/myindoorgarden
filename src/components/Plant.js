@@ -27,7 +27,7 @@ class Plant extends React.Component{
                     <div className="plant-species">{this.state.plant.species}</div>
                     
                     <picture className="plant-pic">
-                        <img className="plant-pic-image" src={this.state.plant.url} alt=""></img>
+                        <img className="plant-pic-image" src={this.state.plant.url} alt=""/>
                     </picture>
                 </a>
             )
