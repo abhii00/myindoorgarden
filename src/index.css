@@ -228,8 +228,27 @@ p{
     .factfile-icons{
         text-align: center;
         display: flex;
-        justify-content: center;
+        justify-content: left;
+
+        padding-top: 1%;
+        padding-left: 5%;
     }
+
+        .factfile-icons-mood{
+            background-color: lightpink;
+            width: 2.75vw;
+            height: 2.75vw;
+            margin: 0.5%;
+
+            font-size: 2vw;
+
+            border-radius: 100%;
+        }
+
+            .factfile-icons-mood-image{
+                height: 100%;
+                width: 100%;
+            }
 
         .factfile-icons-watering{
             background-color: lightblue;
@@ -242,6 +261,11 @@ p{
             border-radius: 100%;
         }
 
+            .factfile-icons-watering-image{
+                height: 100%;
+                width: 100%;
+            }
+
         .factfile-icons-feeding{
             background-color: lightgreen;
             width: 2.75vw;
@@ -252,6 +276,27 @@ p{
 
             border-radius: 100%;
         }
+
+            .factfile-icons-feeding-image{
+                height: 100%;
+                width: 100%;
+            }
+
+        .factfile-icons-pot{
+            background-color: bisque;
+            width: 2.75vw;
+            height: 2.75vw;
+            margin: 0.5%;
+
+            font-size: 2vw;
+
+            border-radius: 100%;
+        }
+
+            .factfile-icons-pot-image{
+                height: 100%;
+                width: 100%;
+            }
 
     .factfile-cross{
         color: var(--green-grey);
