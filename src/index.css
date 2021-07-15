@@ -94,6 +94,8 @@ p{
     }
 
 /*Plant*/
+
+
 .plant-main{
     color: var(--green-grey);
 
@@ -102,6 +104,10 @@ p{
     
     text-decoration: none;
 }
+
+    .plant-blank{
+        padding: 50%;
+    }
 
     .plant-nickname{
         padding-right: 10%;

@@ -5,25 +5,40 @@ class Plant extends React.Component{
         super(props);
 
         this.state = {
-            plant: 0
+            plant: 0,
+            blank: false
         }
     }
 
     componentDidMount(){
-        this.setState({plant: this.props.plant})
+        if (this.props.plant == null){
+            this.setState({blank: true})
+        } 
+        else{
+            this.setState({plant: this.props.plant})
+        }
     }
 
     render(){
-        return(
-            <a className="plant-main" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)}>
-                <p className="plant-nickname">{this.state.plant.nickname}</p>
-                <p className="plant-species">{this.state.plant.species}</p>
-                
-                <picture className="plant-pic">
-                    <img className="plant-pic-image" src={this.state.plant.url} alt=""></img>
-                </picture>
-            </a>
-        )
+        if (!this.state.blank){
+            return(
+                <a className="plant-main" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)}>
+                    <div className="plant-nickname">{this.state.plant.nickname}</div>
+                    <div className="plant-species">{this.state.plant.species}</div>
+                    
+                    <picture className="plant-pic">
+                        <img className="plant-pic-image" src={this.state.plant.url} alt=""></img>
+                    </picture>
+                </a>
+            )
+        }
+        else{
+            return(
+                <div className="plant-main">
+                     <div className="plant-blank">&nbsp;</div>
+                </div>
+            )
+        }
     }
 }
 
