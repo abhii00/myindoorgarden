@@ -28,13 +28,10 @@ class MyIndoorGarden extends React.Component{
     }
 
     componentDidMount(){
-        fetch(this.props.garden)
-        .then(r => r.json())
-        .then(json => {
             console.log("Garden Imported");  
             
             var imported_plants = [];
-            Object.keys(json).forEach((key) => imported_plants.push(<Plant plant={json[key]} renderFactfile={this.renderFactfile.bind(this)}/>));
+            Object.keys(this.props.imported_garden).forEach((key) => imported_plants.push(<Plant plant={this.props.imported_garden[key]} renderFactfile={this.renderFactfile.bind(this)}/>));
             this.setState({plants: imported_plants});
             console.log("Plants Created");
             
@@ -49,7 +46,6 @@ class MyIndoorGarden extends React.Component{
             }
             this.setState({stands: imported_stands})
             console.log("Stands Created");
-        })
     }
 
     render(){

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { MyIndoorGarden } from './components/components.js'
+import garden_json from './gardens/test_garden.json'
 
 import './index.css'
-var garden_url = "./gardens/test_garden.json"
 
 ReactDOM.render(
-    <MyIndoorGarden garden={garden_url}/>,
+    <MyIndoorGarden imported_garden={garden_json}/>,
     document.getElementById('root')
 );
