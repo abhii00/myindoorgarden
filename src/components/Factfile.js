@@ -1,4 +1,6 @@
 import React from 'react';
+import water_icon from '../assets/water.png'
+import food_icon from '../assets/food.png'
 
 class Factfile extends React.Component{
     constructor(props){
@@ -23,9 +25,13 @@ class Factfile extends React.Component{
                     <img className="factfile-pic-image" src={this.state.plant.url} alt=""></img>
                 </picture>
 
-                <div className="factfile-icons"> 
-                    <div className="factfile-icons-watering">{1}</div>
-                    <div className="factfile-icons-feeding">{1}</div>
+                <div className="factfile-icons">
+                    <picture>
+                        <img className="factfile-icons-watering" src={water_icon} alt=""></img>
+                    </picture>
+                    <picture>
+                        <img className="factfile-icons-feeding" src={food_icon} alt=""></img>
+                    </picture>
                 </div>
                 
                 <a className="factfile-cross" onClick={this.props.unrenderFactfile} href="/#">X</a>
