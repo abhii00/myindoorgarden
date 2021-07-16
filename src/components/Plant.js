@@ -1,36 +1,15 @@
 import React from 'react';
 
 class Plant extends React.Component{
-    constructor(props){
-        super(props);
-
-        this.state = {
-            plant: null,
-            blank: false
-        }
-    }
-
-    componentDidMount(){
-        if (this.props.plant == null){
-            this.setState({blank: true})
-        } 
-        else{
-            this.setState({
-                plant: this.props.plant,
-                icondata: this.props.icondata
-            })
-        }
-    }
-
     render(){
-        if (!this.state.blank && this.state.plant != null){
+        if (this.props.plant != null){
             return(
-                <div className="plant" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)} index={JSON.stringify(this.props.index)} icondata={JSON.stringify(this.state.icondata)}>
-                    <div className="plant-nickname">{this.state.plant.individual.nickname}</div>
-                    <div className="plant-species">{this.state.plant.species.species}</div>
+                <div className="plant" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.props.plant)} index={JSON.stringify(this.props.index)} icondata={JSON.stringify(this.props.icondata)}>
+                    <div className="plant-nickname">{this.props.plant.individual.nickname}</div>
+                    <div className="plant-species">{this.props.plant.species.species}</div>
                     
                     <picture className="plant-pic">
-                        <img className="plant-pic-image" src={this.state.plant.individual.url} alt=""/>
+                        <img className="plant-pic-image" src={this.props.plant.individual.url} alt=""/>
                     </picture>
                 </div>
             )
