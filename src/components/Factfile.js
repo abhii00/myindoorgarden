@@ -26,8 +26,10 @@ class Factfile extends React.Component{
                     <div className="factfile-species">{this.state.plant.species.species}</div>
 
                     <div className="factfile-icons">
+                        <Icon type="mood" data={this.state.icondata[0]}/>
                         <Icon type="water" data={this.state.icondata[0]}/>
                         <Icon type="food" data={this.state.icondata[1]}/>
+                        <Icon type="pot" data={this.state.icondata[1]}/>
                     </div>
 
                     <picture className="factfile-pic">

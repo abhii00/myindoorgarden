@@ -48,31 +48,32 @@ p{
     padding-bottom: 1%;
     margin-bottom: 0.5%;
 }
-
-    .header-title{
-        color: var(--white);
-
-        font-size: 3vw;
-
-        width: 45%;
-        text-align: left;
+    .header-titlebar{
         margin-left: 5%;
 
-        text-transform: uppercase;
+        display: flex;
+        flex-direction: row; 
     }
 
-        .header-title-firstletter{
-            font-size: 4vw;
+        .header-titlebar-title{
+            color: var(--white);
+
+            font-size: 3vw; 
+
+            text-transform: uppercase;
         }
 
-    .header-icons{
-        text-align: center;
-        display: flex;
-        justify-content: left;
+            .header-titlebar-title-firstletter{
+                font-size: 4vw;
+            }
 
-        padding-top: 3%;
-        padding-left: 5%; 
-    }
+        .header-titlebar-icons{
+            text-align: center;
+            display: flex;
+            margin-left: auto;
+            margin-right: 5%;
+            margin-top: 1.5%;
+        }
 
     .header-headingline{
         background-color: var(--white);
@@ -268,6 +269,8 @@ p{
     
 /*Icon*/
 .icon{
+    color: black;
+
     width: 2.5vw;
     height: 2.5vw;
     position: relative;
