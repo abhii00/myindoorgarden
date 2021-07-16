@@ -5,19 +5,7 @@ import mood from '../assets/mood.svg'
 import pot from '../assets/pot.svg'
 
 class Icon extends React.Component{
-    constructor(props){
-        super(props);
-
-        this.state={
-            type: null,
-            color: null,
-            image: null,
-            font_size: 0,
-            top: 0
-        }
-    }
-
-    componentDidMount(){
+    render(){
         var color;
         var image;
         switch(this.props.type){
@@ -56,29 +44,12 @@ class Icon extends React.Component{
             top = "40%"
         }
 
-        this.setState({
-            type: this.props.type,
-            color: color,
-            image: image,
-            font_size: font_size,
-            top: top
-        })
-    }
-
-    render(){
-        if (this.state.type != null){
-            return(
-                <div title={this.props.hover} onClick={this.props.click} type={this.state.type} className="icon">
-                    <img style={{backgroundColor: this.state.color}} className="icon-image" src={this.state.image} alt=""/>
-                    <div style={{fontSize: this.state.font_size, top: this.state.top}} className="icon-data">{this.props.data}</div>
-                </div>
-            )
-        }
-        else {
-            return(
-                <div className="icon"></div>
-            )
-        }
+        return(
+            <div title={this.props.hover} onClick={this.props.click} type={this.props.type} className="icon">
+                <img style={{backgroundColor: color}} className="icon-image" src={image} alt=""/>
+                <div style={{fontSize: font_size, top: top}} className="icon-data">{this.props.data}</div>
+            </div>
+        )
     }
 }
 
