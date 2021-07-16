@@ -9,6 +9,9 @@ class Header extends React.Component{
                     <span className="header-title-firstletter">I</span>ndoor&nbsp; 
                     <span className="header-title-firstletter">G</span>arden&nbsp;
                 </div>
+                <div className="header-icons">
+
+                </div>
                 <div className="header-headingline">
                     &nbsp;
                 </div>   

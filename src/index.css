@@ -54,6 +54,7 @@ p{
 
         font-size: 3vw;
 
+        width: 45%;
         text-align: left;
         margin-left: 5%;
 
@@ -63,6 +64,15 @@ p{
         .header-title-firstletter{
             font-size: 4vw;
         }
+
+    .header-icons{
+        text-align: center;
+        display: flex;
+        justify-content: left;
+
+        padding-top: 3%;
+        padding-left: 5%; 
+    }
 
     .header-headingline{
         background-color: var(--white);

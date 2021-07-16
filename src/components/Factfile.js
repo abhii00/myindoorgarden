@@ -1,9 +1,6 @@
 import React from 'react';
 import { Icon } from './components.js'
-import water from '../assets/water.svg'
-import food from '../assets/food.svg'
-import mood from '../assets/mood.svg'
-import pot from '../assets/pot.svg'
+
 
 class Factfile extends React.Component{
     constructor(props){
@@ -29,10 +26,8 @@ class Factfile extends React.Component{
                     <div className="factfile-species">{this.state.plant.species.species}</div>
 
                     <div className="factfile-icons">
-                        {/*<Icon color="moccasin" image={mood} data={this.state.plant.data.last_watered}/>
-                        <Icon color="pink" image={pot} data={this.state.plant.data.last_watered}/>*/}
-                        <Icon color="lightblue" image={water} data={this.state.icondata[0]}/>
-                        <Icon color="lightgreen" image={food} data={this.state.icondata[1]}/>
+                        <Icon type="water" data={this.state.icondata[0]}/>
+                        <Icon type="food" data={this.state.icondata[1]}/>
                     </div>
 
                     <picture className="factfile-pic">
