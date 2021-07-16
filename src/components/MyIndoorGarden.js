@@ -7,8 +7,7 @@ class MyIndoorGarden extends React.Component{
         
         this.state = {
             factfileshown: false,
-            plants: [],
-            stands: []
+            stands: null
         }
 
         this.consts = {
@@ -50,13 +49,20 @@ class MyIndoorGarden extends React.Component{
     }
 
     render(){
-        return(
-            <div className="myindoorgarden">
-                <Header/>
-                {this.state.stands}
-                {(this.state.factfileshown) ? <Factfile plant={this.state.factfileplant} unrenderFactfile={this.unrenderFactfile.bind(this)} /> : ''}
-            </div>
-        )
+        if (this.state.stands != null){
+            return(
+                <div className="myindoorgarden">
+                    <Header/>
+                    {this.state.stands}
+                    {(this.state.factfileshown) ? <Factfile plant={this.state.factfileplant} unrenderFactfile={this.unrenderFactfile.bind(this)} /> : ''}
+                </div>
+            )
+        }
+        else{
+            return(
+                <div className="myindoorgarden"></div>
+            )
+        }
     }
 }
 
