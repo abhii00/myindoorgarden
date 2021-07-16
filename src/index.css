@@ -274,9 +274,9 @@ p{
         position: absolute;
         margin: auto;
         display: inline-block;
-        top: 15%;
-        left: 45%;
+        height: 2.5vw;
+        width: 2.5vw;
+        left: 15%;
 
-        font-size: 1.75vw;
         font-weight: bold;
     }

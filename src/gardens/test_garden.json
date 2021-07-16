@@ -6,12 +6,12 @@
         },
         "species": {
             "species": "Kentia Palm",
-            "water": 0,
-            "food": 0
+            "water": 4,
+            "food": 7
         },
         "data": {
             "last_watered": 18823,
-            "last_fed": 0
+            "last_fed": 18823
         }
     },
     {
@@ -21,12 +21,12 @@
         },
         "species": {
             "species": "Monstera Deliciosa",
-            "water": 0,
-            "food": 0
+            "water": 7,
+            "food": 7
         },
         "data": {
-            "last_watered": 0,
-            "last_fed": 0
+            "last_watered": 18823,
+            "last_fed": 18823
         }
     },
     {
@@ -36,12 +36,12 @@
         },
         "species": {
             "species": "Dieffenbachia",
-            "water": 0,
-            "food": 0
+            "water": 4,
+            "food": 7
         },
         "data": {
-            "last_watered": 0,
-            "last_fed": 0
+            "last_watered": 18823,
+            "last_fed": 18823
         }
     },
     {
@@ -51,12 +51,12 @@
         },
         "species": {
             "species": "Aglaonema",
-            "water": 0,
-            "food": 0
+            "water": 4,
+            "food": 7
         },
         "data": {
-            "last_watered": 0,
-            "last_fed": 0
+            "last_watered": 18823,
+            "last_fed": 18823
         }
     },
     {
@@ -66,12 +66,12 @@
         },
         "species": {
             "species": "Golden Pothos",
-            "water": 0,
-            "food": 0
+            "water": 18,
+            "food": 7
         },
         "data":{
-            "last_watered": 0,
-            "last_fed": 0
+            "last_watered": 18823,
+            "last_fed": 18823
         }
     },
     {
@@ -81,12 +81,12 @@
         },
         "species": {
             "species": "Dracaena Trifasciata",
-            "water": 0,
-            "food": 0
+            "water": 30,
+            "food": 105
         },
         "data": {
-            "last_watered": 0,
-            "last_fed": 0
+            "last_watered": 18823,
+            "last_fed": 18823
         }
     }
 ]
