@@ -1,8 +1,7 @@
 import React from 'react';
 import { Icon } from './components.js'
 
-
-class Factfile extends React.Component{
+class FactFile extends React.Component{
     render(){
         return(
             <div className="factfile">
@@ -26,4 +25,4 @@ class Factfile extends React.Component{
     }
 }
 
-export default Factfile
+export default FactFile

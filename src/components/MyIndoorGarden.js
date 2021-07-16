@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Stand, Plant, Factfile } from './components.js'
+import { Header, Stand, Plant, FactFile } from './components.js'
 import imported_garden from '../gardens/test_garden.json'
 
 class MyIndoorGarden extends React.Component{
@@ -119,7 +119,7 @@ class MyIndoorGarden extends React.Component{
                 <div className="myindoorgarden">
                     <Header icondata={this.state.headericondata}/>
                     {this.state.stands}
-                    {(this.state.factfileshown) ? <Factfile plant={this.state.factfileplant} icondata={this.state.factfileicondata} iconClick={this.iconClick} unrenderFactfile={this.unrenderFactfile} /> : ''}
+                    {(this.state.factfileshown) ? <FactFile plant={this.state.factfileplant} icondata={this.state.factfileicondata} iconClick={this.iconClick} unrenderFactfile={this.unrenderFactfile} /> : ''}
                 </div>
             )
         }
