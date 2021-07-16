@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header, Stand, Plant, Factfile } from './components.js'
+import imported_garden from '../gardens/test_garden.json'
 
 class MyIndoorGarden extends React.Component{
     constructor(props){
@@ -54,7 +55,6 @@ class MyIndoorGarden extends React.Component{
             factfileplant: modified_plant,
             factfileicondata: this.calculateIconData(modified_plant)
         });
-        console.log(modified_plant);
         this.updatePlants();
     }
 
@@ -72,8 +72,7 @@ class MyIndoorGarden extends React.Component{
             garden_to_use = this.state.garden;
         }
         else{
-            garden_to_use = this.props.imported_garden;
-            console.log("Garden Imported");
+            garden_to_use = imported_garden;
         }
         
         var imported_plants = [];
@@ -90,7 +89,6 @@ class MyIndoorGarden extends React.Component{
             }
             imported_plants.push(<Plant key={i} plant={current_plant} index={i} icondata={current_icondata} renderFactfile={this.renderFactfile}/>)
         }
-        console.log("Plants Created");
         
         var imported_stands = [];
         var stand_plants = [];
@@ -109,7 +107,6 @@ class MyIndoorGarden extends React.Component{
             stands: imported_stands,
             headericondata: [watering_plants, feeding_plants]
         })
-        console.log("Stands Created");
     }
 
     componentDidMount(){
