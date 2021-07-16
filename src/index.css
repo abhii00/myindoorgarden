@@ -125,8 +125,8 @@ p{
 .plant{
     color: var(--green-grey);
 
-    height: 20%;
-    width: 20%;
+    height: 15%;
+    width: 15%;
     
     text-decoration: none;
 
@@ -135,6 +135,8 @@ p{
 
     .plant-blank{
         padding: 50%;
+
+        cursor: default;
     }
 
     .plant-nickname{
@@ -176,7 +178,7 @@ p{
     color: var(--green-grey);
     background-color: var(--white);
 
-    height: 35%;
+    height: 40%;
     width: 40%;
     margin: auto;
     position: absolute;
@@ -199,11 +201,14 @@ p{
 
         text-align: left;
         font-size: 3vw;
+
+        width: 30%;
     }
 
         .factfile-nickname::first-letter{
             font-size: 3.5vw;
         }
+    
 
     .factfile-species{
         padding-left: 5%;
@@ -211,6 +216,7 @@ p{
         text-align: left;
         font-size: 1.5vw;
         text-transform: uppercase;
+        font-style: italic;
     }
 
         .factfile-species::first-letter{
@@ -241,7 +247,7 @@ p{
     .factfile-cross{
         color: var(--green-grey);
 
-        display:flex;
+        display: flex;
         justify-content: center;
 
         text-decoration: none;
@@ -249,10 +255,11 @@ p{
         font-weight: 900;
     }
 
+    
 /*Icon*/
 .icon{
-    width: 2.75vw;
-    height: 2.75vw;
+    width: 2.5vw;
+    height: 2.5vw;
     position: relative;
 }
     .icon-image{
@@ -270,6 +277,6 @@ p{
         top: 15%;
         left: 45%;
 
-        font-size: 2vw;
+        font-size: 1.75vw;
         font-weight: bold;
     }

@@ -12,7 +12,7 @@ class MyIndoorGarden extends React.Component{
         }
 
         this.consts = {
-            standsize: 5
+            standsize: 6
         }
     }
 
