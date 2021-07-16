@@ -16,7 +16,6 @@ class Header extends React.Component{
 
     render(){
         if (this.state.icondata != null){
-            console.log(this.state.icondata)
             return(
                 <div className="header">
                     <div className="header-titlebar">
@@ -29,7 +28,7 @@ class Header extends React.Component{
                             <Icon hover={this.state.icondata[0].join(", ")} type="mood" data={this.state.icondata[0].length}/>
                             <Icon hover={this.state.icondata[0].join(", ")} type="water" data={this.state.icondata[0].length}/>
                             <Icon hover={this.state.icondata[1].join(", ")} type="food" data={this.state.icondata[1].length}/>
-                            <Icon hover={this.state.icondata[1].join(", ")} type="pot" data={this.state.icondata[1].length}/>
+                            <Icon hover={this.state.icondata[1].join(",")} type="pot" data={this.state.icondata[1].length}/>
                         </div>
                     </div>
                     <div className="header-headingline">

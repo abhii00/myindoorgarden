@@ -11,11 +11,15 @@ class Factfile extends React.Component{
         }
     }
 
-    componentDidMount(){
+    updatePlant(){
         this.setState({
             plant: JSON.parse(this.props.plant),
             icondata: JSON.parse(this.props.icondata)
         })
+    }
+
+    componentDidMount(){
+        this.updatePlant();   
     }
 
     render(){
@@ -27,9 +31,9 @@ class Factfile extends React.Component{
 
                     <div className="factfile-icons">
                         <Icon type="mood" data={this.state.icondata[0]}/>
-                        <Icon type="water" data={this.state.icondata[0]}/>
-                        <Icon type="food" data={this.state.icondata[1]}/>
-                        <Icon type="pot" data={this.state.icondata[1]}/>
+                        <Icon hover={"Watered?"} click={this.props.iconClick} type="water" data={this.state.icondata[0]}/>
+                        <Icon hover={"Fed?"} click={this.props.iconClick} type="food" data={this.state.icondata[1]}/>
+                        <Icon hover={"Repotted?"} click={this.props.iconClick} type="pot" data={this.state.icondata[1]}/>
                     </div>
 
                     <picture className="factfile-pic">

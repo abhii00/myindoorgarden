@@ -25,7 +25,7 @@ class Plant extends React.Component{
     render(){
         if (!this.state.blank && this.state.plant != null){
             return(
-                <div className="plant" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)} icondata={JSON.stringify(this.state.icondata)}>
+                <div className="plant" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)} index={JSON.stringify(this.props.index)} icondata={JSON.stringify(this.state.icondata)}>
                     <div className="plant-nickname">{this.state.plant.individual.nickname}</div>
                     <div className="plant-species">{this.state.plant.species.species}</div>
                     

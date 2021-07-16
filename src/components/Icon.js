@@ -68,7 +68,7 @@ class Icon extends React.Component{
     render(){
         if (this.state.type != null){
             return(
-                <div title={this.props.hover} className="icon">
+                <div title={this.props.hover} onClick={this.props.click} type={this.state.type} className="icon">
                     <img style={{backgroundColor: this.state.color}} className="icon-image" src={this.state.image} alt=""/>
                     <div style={{fontSize: this.state.font_size, top: this.state.top}} className="icon-data">{this.props.data}</div>
                 </div>

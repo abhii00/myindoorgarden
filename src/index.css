@@ -274,6 +274,8 @@ p{
     width: 2.5vw;
     height: 2.5vw;
     position: relative;
+
+    cursor: pointer;
 }
     .icon-image{
         width: 100%;
