@@ -2,28 +2,19 @@ import React from 'react';
 import { Plant } from './components.js'
 
 class Stand extends React.Component{
-    constructor(props){
-        super(props);
-
-        this.state={
-            plants: 0
-        }
-    }
-
-    componentDidMount(){
+    render(){
+        var plants = [];
         if (this.props.plants == null){
-            this.setState({plants: <Plant/>})
+            plants = <Plant/>
         } 
         else{
-            this.setState({plants: this.props.plants})
+            plants = this.props.plants
         }
-    }
 
-    render(){
         return(
             <React.Fragment>
                 <div className="stand">
-                    {this.state.plants}  
+                    {plants}  
                 </div>
                 <div className="stand-shelf">&nbsp;</div>
                 <div className="stand-brackets">
