@@ -20,8 +20,8 @@ class MyIndoorGarden extends React.Component{
         this.setState({
             factfileshown: true,
             factfileplant: JSON.parse(e.currentTarget.getAttribute("plant")),
-            factfileindex: e.currentTarget.getAttribute("index"),
-            factfileicondata: e.currentTarget.getAttribute("icondata"),
+            factfileindex: JSON.parse(e.currentTarget.getAttribute("index")),
+            factfileicondata: JSON.parse(e.currentTarget.getAttribute("icondata")),
         })
     }
 
@@ -104,7 +104,7 @@ class MyIndoorGarden extends React.Component{
                 <div className="myindoorgarden">
                     <Header icondata={this.state.headericondata}/>
                     {this.state.stands}
-                    {(this.state.factfileshown) ? <Factfile plant={JSON.stringify(this.state.factfileplant)} icondata={this.state.factfileicondata} iconClick={this.iconClick} unrenderFactfile={this.unrenderFactfile} /> : ''}
+                    {(this.state.factfileshown) ? <Factfile plant={this.state.factfileplant} icondata={this.state.factfileicondata} iconClick={this.iconClick} unrenderFactfile={this.unrenderFactfile} /> : ''}
                 </div>
             )
         }
