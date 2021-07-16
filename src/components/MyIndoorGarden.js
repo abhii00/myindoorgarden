@@ -7,6 +7,8 @@ class MyIndoorGarden extends React.Component{
         
         this.state = {
             factfileshown: false,
+            factfileplant: null,
+            factfileindex: 0,
             garden: null,
             stands: null
         }
@@ -46,11 +48,14 @@ class MyIndoorGarden extends React.Component{
             default:
                 break;
         }
-        modified_garden[this.state.factfile] = modified_plant;
+        modified_garden[this.state.factfileindex] = modified_plant;
         this.setState({
             garden: modified_garden,
-            factfileplant: modified_plant
+            factfileplant: modified_plant,
+            factfileicondata: this.calculateIconData(modified_plant)
         });
+        console.log(modified_plant);
+        this.updatePlants();
     }
 
     calculateIconData(plant){
@@ -58,13 +63,19 @@ class MyIndoorGarden extends React.Component{
         var icondata = [];
         icondata.push(plant.data.last_watered+plant.species.water-currentDay);
         icondata.push(plant.data.last_fed+plant.species.food-currentDay);
-        return(icondata)
+        return icondata
     }
 
-    componentDidMount(){
-        var garden_to_use = this.props.imported_garden;
-        console.log("Garden Imported");
-
+    updatePlants(){
+        var garden_to_use;
+        if (this.state.garden != null){
+            garden_to_use = this.state.garden;
+        }
+        else{
+            garden_to_use = this.props.imported_garden;
+            console.log("Garden Imported");
+        }
+        
         var imported_plants = [];
         var watering_plants = [];
         var feeding_plants = [];
@@ -83,12 +94,15 @@ class MyIndoorGarden extends React.Component{
         
         var imported_stands = [];
         var stand_plants = [];
+        i = 0;
         while (imported_plants.length > 0){
             stand_plants = imported_plants.splice(0,this.consts.standsize);
             imported_stands.push(<Stand key={i} plants={stand_plants}/>)
+            i++;
         }
         while(imported_stands.length < 5){
-            imported_stands.push(<Stand/>)
+            imported_stands.push(<Stand key={i} plants={<Plant/>}/>)
+            i++;
         }
         this.setState({
             garden: garden_to_use, 
@@ -96,6 +110,10 @@ class MyIndoorGarden extends React.Component{
             headericondata: [watering_plants, feeding_plants]
         })
         console.log("Stands Created");
+    }
+
+    componentDidMount(){
+        this.updatePlants();
     }
 
     render(){
