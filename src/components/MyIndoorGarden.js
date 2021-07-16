@@ -7,6 +7,7 @@ class MyIndoorGarden extends React.Component{
         
         this.state = {
             factfileshown: false,
+            garden: null,
             stands: null
         }
 
@@ -18,7 +19,8 @@ class MyIndoorGarden extends React.Component{
     renderFactfile(e){
         this.setState({
             factfileshown: true,
-            factfileplant: e.currentTarget.getAttribute("plant")
+            factfileplant: e.currentTarget.getAttribute("plant"),
+            factfileicondata: e.currentTarget.getAttribute("icondata")
         })
     }
 
@@ -26,12 +28,22 @@ class MyIndoorGarden extends React.Component{
         this.setState({factfileshown: false})
     }
 
+    calculateIconData(plant){
+        var currentDay = Math.floor(Date.now()/(86400*1000));
+        var icondata = [];
+        icondata.push(currentDay+plant.species.water-plant.data.last_watered);
+        icondata.push(currentDay+plant.species.food-plant.data.last_fed);
+        return(icondata)
+    }
+
     componentDidMount(){
             console.log("Garden Imported");  
-            
+
             var imported_plants = [];
             for (var i = 0; i < this.props.imported_garden.length; i++){
-                imported_plants.push(<Plant plant={this.props.imported_garden[i]} renderFactfile={this.renderFactfile.bind(this)}/>)
+                var current_plant = this.props.imported_garden[i];
+                var current_icondata = this.calculateIconData(current_plant);
+                imported_plants.push(<Plant plant={current_plant} icondata={current_icondata} renderFactfile={this.renderFactfile.bind(this)}/>)
             }
             console.log("Plants Created");
             
@@ -44,7 +56,10 @@ class MyIndoorGarden extends React.Component{
             while(imported_stands.length < 5){
                 imported_stands.push(<Stand/>)
             }
-            this.setState({stands: imported_stands})
+            this.setState({
+                garden: this.props.imported_garden, 
+                stands: imported_stands
+            })
             console.log("Stands Created");
     }
 
@@ -54,7 +69,7 @@ class MyIndoorGarden extends React.Component{
                 <div className="myindoorgarden">
                     <Header/>
                     {this.state.stands}
-                    {(this.state.factfileshown) ? <Factfile plant={this.state.factfileplant} unrenderFactfile={this.unrenderFactfile.bind(this)} /> : ''}
+                    {(this.state.factfileshown) ? <Factfile plant={this.state.factfileplant} icondata={this.state.factfileicondata} unrenderFactfile={this.unrenderFactfile.bind(this)} /> : ''}
                 </div>
             )
         }

@@ -15,7 +15,10 @@ class Factfile extends React.Component{
     }
 
     componentDidMount(){
-        this.setState({plant: JSON.parse(this.props.plant)})
+        this.setState({
+            plant: JSON.parse(this.props.plant),
+            icondata: JSON.parse(this.props.icondata)
+        })
     }
 
     render(){
@@ -26,10 +29,10 @@ class Factfile extends React.Component{
                     <div className="factfile-species">{this.state.plant.species.species}</div>
 
                     <div className="factfile-icons">
-                        <Icon color="moccasin" image={mood}/>
-                        <Icon color="lightblue" image={water}/>
-                        <Icon color="lightgreen" image={food}/>
-                        <Icon color="pink" image={pot}/>
+                        {/*<Icon color="moccasin" image={mood} data={this.state.plant.data.last_watered}/>
+                        <Icon color="pink" image={pot} data={this.state.plant.data.last_watered}/>*/}
+                        <Icon color="lightblue" image={water} data={this.state.icondata[0]}/>
+                        <Icon color="lightgreen" image={food} data={this.state.icondata[1]}/>
                     </div>
 
                     <picture className="factfile-pic">

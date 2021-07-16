@@ -5,7 +5,7 @@ class Icon extends React.Component{
         return(
             <div className="icon">
                 <img style={{backgroundColor: this.props.color}} className="icon-image" src={this.props.image} alt=""/>
-                <div className="icon-data">1</div>
+                <div className="icon-data">{this.props.data}</div>
             </div>
         )
     }

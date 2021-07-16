@@ -15,14 +15,17 @@ class Plant extends React.Component{
             this.setState({blank: true})
         } 
         else{
-            this.setState({plant: this.props.plant})
+            this.setState({
+                plant: this.props.plant,
+                icondata: this.props.icondata
+            })
         }
     }
 
     render(){
         if (!this.state.blank && this.state.plant != null){
             return(
-                <div className="plant" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)}>
+                <div className="plant" onClick={this.props.renderFactfile} href="/#" plant={JSON.stringify(this.state.plant)} icondata={JSON.stringify(this.state.icondata)}>
                     <div className="plant-nickname">{this.state.plant.individual.nickname}</div>
                     <div className="plant-species">{this.state.plant.species.species}</div>
                     
