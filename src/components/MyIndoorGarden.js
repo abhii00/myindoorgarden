@@ -125,7 +125,7 @@ class MyIndoorGarden extends React.Component{
         }
         else{
             return(
-                <div className="myindoorgarden"></div>
+                <div className="myindoorgarden"/>
             )
         }
     }
