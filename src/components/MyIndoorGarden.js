@@ -1,6 +1,6 @@
 import React from 'react';
-import { Header, Stand, Plant, FactFile } from './components.js'
-import imported_garden from '../gardens/test_garden.json'
+import { Header, Stand, Plant, FactFile } from './components.js';
+import backend from "../config/backend.json";
 
 class MyIndoorGarden extends React.Component{
     constructor(props){
@@ -66,15 +66,18 @@ class MyIndoorGarden extends React.Component{
         return icondata
     }
 
-    updatePlants(){
-        var garden_to_use;
+    importGarden(){
         if (this.state.garden != null){
-            garden_to_use = this.state.garden;
+            this.updatePlants(this.state.garden);
         }
         else{
-            garden_to_use = imported_garden;
+            fetch(backend['api'] + 'myindoorgarden/test')
+            .then(r => r.json())
+            .then(json => this.updatePlants(json))
         }
-        
+    }
+
+    updatePlants = (garden_to_use) => {
         var imported_plants = [];
         var watering_plants = [];
         var feeding_plants = [];
@@ -110,7 +113,7 @@ class MyIndoorGarden extends React.Component{
     }
 
     componentDidMount(){
-        this.updatePlants();
+        this.importGarden();
     }
 
     render(){

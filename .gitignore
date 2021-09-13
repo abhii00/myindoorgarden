@@ -8,8 +8,11 @@
 # testing
 /coverage
 
-#assett
+# assets
 /src/gardens
+
+# config
+/src/config
 
 # production
 /build
