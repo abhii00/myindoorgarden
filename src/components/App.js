@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Stand, Plant, FactFile } from './components.js';
-import server from "../config/server.json";
+import server from '../config/server.json';
 
 class App extends React.Component{
     constructor(props){
@@ -22,9 +22,9 @@ class App extends React.Component{
     renderFactfile = (e) => {
         this.setState({
             factfileshown: true,
-            factfileplant: JSON.parse(e.currentTarget.getAttribute("plant")),
-            factfileindex: JSON.parse(e.currentTarget.getAttribute("index")),
-            factfileicondata: JSON.parse(e.currentTarget.getAttribute("icondata")),
+            factfileplant: JSON.parse(e.currentTarget.getAttribute('plant')),
+            factfileindex: JSON.parse(e.currentTarget.getAttribute('index')),
+            factfileicondata: JSON.parse(e.currentTarget.getAttribute('icondata')),
         })
     }
 
@@ -38,12 +38,12 @@ class App extends React.Component{
 
         var currentDay = Math.floor(Date.now()/(86400*1000));
 
-        var modification_type = e.currentTarget.getAttribute("type");
+        var modification_type = e.currentTarget.getAttribute('type');
         switch(modification_type){
-            case "water":
+            case 'water':
                 modified_plant.data.last_watered = currentDay; 
                 break;
-            case "food":
+            case 'food':
                 modified_plant.data.last_fed = currentDay;
                 break;
             default:
@@ -125,7 +125,7 @@ class App extends React.Component{
     render(){
         if (this.state.stands != null){
             return(
-                <div className="myindoorgarden">
+                <div className='myindoorgarden'>
                     <Header icondata={this.state.headericondata}/>
                     {this.state.stands}
                     {(this.state.factfileshown) ? <FactFile plant={this.state.factfileplant} icondata={this.state.factfileicondata} iconClick={this.iconClick} unrenderFactfile={this.unrenderFactfile} /> : ''}
@@ -134,7 +134,7 @@ class App extends React.Component{
         }
         else{
             return(
-                <div className="myindoorgarden"/>
+                <div className='myindoorgarden'/>
             )
         }
     }
