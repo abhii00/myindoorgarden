@@ -2,7 +2,7 @@ import React from 'react';
 import { Header, Stand, Plant, FactFile } from './components.js';
 import backend from "../config/backend.json";
 
-class MyIndoorGarden extends React.Component{
+class App extends React.Component{
     constructor(props){
         super(props);
         
@@ -55,7 +55,7 @@ class MyIndoorGarden extends React.Component{
             factfileplant: modified_plant,
             factfileicondata: this.calculateIconData(modified_plant)
         });
-        this.updatePlants();
+        this.updateGarden();
     }
 
     calculateIconData(plant){
@@ -73,11 +73,17 @@ class MyIndoorGarden extends React.Component{
         else{
             fetch(backend['api'] + 'myindoorgarden/test')
             .then(r => r.json())
-            .then(json => this.updatePlants(json))
+            .then(json => this.updateGarden(json))
         }
     }
 
-    updatePlants = (garden_to_use) => {
+    /*
+    exportGarden(){
+
+    }
+    */
+
+    updateGarden = (garden_to_use) => {
         var imported_plants = [];
         var watering_plants = [];
         var feeding_plants = [];
@@ -134,4 +140,4 @@ class MyIndoorGarden extends React.Component{
     }
 }
 
-export default MyIndoorGarden
+export default App

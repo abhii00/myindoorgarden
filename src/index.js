@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom';
-import { MyIndoorGarden } from './components/components.js'
+import { App } from './components/components.js';
 
 import './index.css'
 
 ReactDOM.render(
-    <MyIndoorGarden/>,
+    <App/>,
     document.getElementById('root')
 );
