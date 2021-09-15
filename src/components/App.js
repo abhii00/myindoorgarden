@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header, Stand, Plant, FactFile } from './components.js';
-import backend from "../config/backend.json";
+import server from "../config/server.json";
 
 class App extends React.Component{
     constructor(props){
@@ -71,7 +71,7 @@ class App extends React.Component{
             this.updatePlants(this.state.garden);
         }
         else{
-            fetch(backend['api'] + 'myindoorgarden/test')
+            fetch(server['api'] + 'myindoorgarden/test')
             .then(r => r.json())
             .then(json => this.updateGarden(json))
         }

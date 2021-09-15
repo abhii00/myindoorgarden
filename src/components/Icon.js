@@ -1,8 +1,8 @@
-import React from 'react'
-import water from '../assets/water.svg'
-import food from '../assets/food.svg'
-import mood from '../assets/mood.svg'
-import pot from '../assets/pot.svg'
+import React from 'react';
+import water from '../assets/water.svg';
+import food from '../assets/food.svg';
+import mood from '../assets/mood.svg';
+import pot from '../assets/pot.svg';
 
 class Icon extends React.Component{
     render(){
