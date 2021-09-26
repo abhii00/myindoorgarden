@@ -3,6 +3,10 @@ import { Header, Stand, Plant, FactFile } from './components.js';
 import server from '../config/server.json';
 
 class App extends React.Component{
+    /* TODO refactor code */
+    /* TODO login */
+    /* TODO upload Gardens to backend on window exit */
+
     constructor(props){
         super(props);
         
