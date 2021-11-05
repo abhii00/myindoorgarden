@@ -27,7 +27,7 @@ _July 2021 - Present_
 ### **New Skills**
 
 * Aesthetic design.
-* User interfaces.
+* User interfaces and Frontend Design.
 
 ### **Skills Developed**
 
