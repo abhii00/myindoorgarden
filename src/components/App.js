@@ -2,10 +2,13 @@ import React from 'react';
 import { Header, Stand, Plant, FactFile } from './components.js';
 import server from '../config/server.json';
 
+// TODO refactor code
+// TODO login
+// TODO upload Gardens to backend on window exit
+// TODO better graphical design
+// TODO loading screen/animation
+
 class App extends React.Component{
-    /* TODO refactor code */
-    /* TODO login */
-    /* TODO upload Gardens to backend on window exit */
 
     constructor(props){
         super(props);
