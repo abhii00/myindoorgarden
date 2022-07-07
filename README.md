@@ -1,5 +1,7 @@
 # **My Indoor Garden**
 
+:white_check_mark: WORK PLANNED :white_check_mark:
+
 A web-app to track houseplant watering, feeding and repotting schedules.
 
 _July 2021 - Present_
